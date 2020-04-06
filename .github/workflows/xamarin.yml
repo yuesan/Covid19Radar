@@ -14,8 +14,7 @@ jobs:
     - name: Android
       run: |
         nuget restore
-        cd Covid19Radar.Android
-        msbuild Covid19Radar.Android.csproj /verbosity:normal /t:Rebuild /p:Configuration=Debug
+        msbuild Covid19Radar.Android/Covid19Radar.Android.csproj /verbosity:normal /t:Rebuild /p:Configuration=Debug
         
   iOS:
     runs-on: macos-latest
